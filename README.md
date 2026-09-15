@@ -2,11 +2,30 @@
 
 A Java-based transport management system that models vehicles, bookings, routes and daily takings using object-oriented programming and data structures.
 
-Built as a way to put my Java fundamentals into practice, this project focuses on how different parts of a transport system can work together — from managing different vehicle types to processing bookings and generating daily reports.
+Built as a way to put Java fundamentals into practice, focusing on how different parts of a transport system work together.
 
 ---
 
-## The Challenge
+### 🛠️ Tech Stack
+
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+[![OOP](https://img.shields.io/badge/OOP-FF6B6B?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Object-oriented_programming)
+[![Data Structures](https://img.shields.io/badge/Data%20Structures-4ECDC4?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Data_structure)
+[![HashMap](https://img.shields.io/badge/HashMap-95E1D3?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Hash_table)
+[![Arrays](https://img.shields.io/badge/Arrays-F38181?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Array_(data_structure))
+[![CSV](https://img.shields.io/badge/CSV-AA96DA?style=for-the-badge&logoColor=white)](https://en.wikipedia.org/wiki/Comma-separated_values)
+
+---
+
+<div align="center">
+
+**[🚕 View Repository](https://github.com/fentiogbue13-web/cab-company-management-system)** | **[💻 View Source Code](https://github.com/fentiogbue13-web/cab-company-management-system)**
+
+</div>
+
+---
+
+## 🎯 The Challenge
 
 I wanted to build something that would push me beyond writing individual Java classes and actually make me think about how a complete system should be structured.
 
@@ -24,7 +43,7 @@ The result is a small transport management system built around object-oriented d
 
 ---
 
-## How The System Works
+## ⚙️ How The System Works
 
 The system manages two main types of vehicles: **cabs and buses**.
 
@@ -40,7 +59,28 @@ For buses, I also implemented circular route logic so that once the end of a rou
 
 ---
 
-## Object-Oriented Design
+## 🔄 System Workflow
+
+```mermaid
+flowchart TD
+    A[🚕 Cab Company System] --> B[Load Vehicle Data]
+    A --> C[Load Booking Data]
+
+    B --> D[Vehicle Management]
+    C --> E[Booking Processing]
+
+    D --> E
+
+    E --> F[Calculate Takings]
+    E --> G[Process Bus Routes]
+
+    F --> H[📊 Daily Report]
+    G --> H
+```
+
+---
+
+## 🧠 Object-Oriented Design
 
 One of the main things I wanted to practise with this project was using OOP concepts together in a realistic system rather than just demonstrating them individually.
 
@@ -66,7 +106,7 @@ This was one of the parts of the project that helped OOP make more sense to me �
 
 ---
 
-## Data Structures & Efficiency
+## 📊 Data Structures & Efficiency
 
 I also wanted the project to make me think about **how data is stored and accessed**, rather than just making the system work.
 
@@ -86,7 +126,7 @@ This was a useful way of applying data structures to an actual problem rather th
 
 ---
 
-## The Data
+## 📂 The Data
 
 The system works with booking and vehicle information stored in CSV files.
 
@@ -103,7 +143,7 @@ The system can:
 
 ---
 
-## Stack
+## 🛠️ Stack
 
 | What | Why |
 |---|---|
@@ -116,7 +156,7 @@ The system can:
 
 ---
 
-## Why This Matters
+## 💡 Why This Matters
 
 ✅ **It's more than individual classes.** The project brings multiple Java concepts together into one working system.
 
@@ -130,7 +170,7 @@ The system can:
 
 ---
 
-## What I Learned
+## 📚 What I Learned
 
 - **Object-oriented design** — Understanding how abstraction, inheritance and polymorphism can work together in a larger Java program.
 - **Data structures** — Seeing how the choice of a data structure can affect how efficiently information can be accessed.
@@ -141,7 +181,7 @@ The system can:
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 Clone the repository and open the project in a Java-compatible IDE.
 
@@ -155,3 +195,13 @@ CabCompany.java
 Main.java
 Vehicle.java
 ```
+
+---
+
+<div align="center">
+
+**Built with Java | Object-Oriented Design | Data Structures**
+
+*A complete transport management system, from concept to completion.*
+
+</div>
